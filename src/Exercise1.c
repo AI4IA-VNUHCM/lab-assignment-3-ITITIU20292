@@ -14,8 +14,24 @@ Ex:
 
 void Ex1(int arr[], int n){
 	//Your codes here
-    
+	int i,j;
+	int sym=0;
+	for(int i=0;i<n;i++){
+        if(arr[i]!=arr[n-1-i])
+            sym++;
+		
+	}
+
+	
+		if(sym==0){
+		printf("symmetric");
+		}
+		else 
+		printf("asymmetric");
+	
 }
+ 
+
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
